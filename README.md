@@ -57,28 +57,19 @@ Nothing more.
 
 ---
 
-## System components
+## Implementation (Current)
 
-### 1. Router
+The system is currently implemented as **two Custom GPTs**:
 
-Classifies the text according to its dominant structural intention.
+- **Router (Custom GPT):** assigns the editorial type (A/B/C/D) with confidence.
+- **Auditor (Custom GPT):** validates structural coherence against the selected type and reports only deviations.
 
-- Prioritizes intention over vocabulary.
-- Uses explicit tie-breaking rules.
-- Outputs a single type with confidence level.
+The files in `/prompts` are the **instruction sets** used to configure those Custom GPTs.
 
-### 2. Auditor
+The file in `/editorial_framework` includes the required **editorial lines** for context.
 
-Evaluates structural coherence against the selected line.
 
-- Detects deviations.
-- Flags Definition of Done gaps.
-- Reports only friction (minimalist output).
-- Does not rewrite.
-
-### 3. Editorial lines
-
-Four operational types:
+**Editorial lines**: 
 
 - **Type A** — Applied, non-technical, product-oriented  
 - **Type B** — Technical applied explanation  
@@ -89,6 +80,8 @@ Each type includes:
 
 - Operational rules  
 - Definition of Done  
+
+
 
 ---
 

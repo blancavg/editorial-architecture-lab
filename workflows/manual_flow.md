@@ -1,24 +1,10 @@
 # Manual flow — Editorial Architecture Lab
 
-## Step 1 — Draft
-Write the post without worrying about classification.
+This workflow assumes you are using two Custom GPTs: Router and Auditor.
 
-## Step 2 — Router
-Send the draft to the Router.
-Obtain:
-- Type
-- Confidence
-
-## Step 3 — Auditor
-Send:
-- Type
-- Text
-
-Receive:
-- Structural deviations (if any)
-
-## Step 4 — Adjust (if needed)
-Revise only the flagged structural elements.
-
-## Step 5 — Publish
-If Auditor returns "Alineado", publish.
+1. Draft the text.
+2. Send the draft to the Router (Custom GPT).
+3. Obtain the type (A/B/C/D).
+4. Send the type + text to the Auditor (Custom GPT).
+5. Adjust only if the human approves to fix deviations that are detected.
+6. Publish when the human decides to do so.

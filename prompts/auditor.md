@@ -1,5 +1,4 @@
-# Prompt --- Auditor Editorial InBloom (Versión 3.2 Terminología Coherente)
-
+# Auditor (Custom GPT) Editorial 
 ------------------------------------------------------------------------
 
 ## Rol
@@ -29,8 +28,10 @@ No agregues información adicional.
 
 ## Contexto
 
-Linea editorial operativa para el Tipo validado por Router [[01_lineas_editoriales]]
-Definition of Done para el Tipo validado por Router [[01_lineas_editoriales]]
+Archivo lineas_editoriales.md que contiene
+* Línea editorial operativa para el Tipo validado por Router 
+* Definition of Done para el Tipo validado por Router
+
 ## Entrada
 
 Tipo validado por Router: A, B, C o D
