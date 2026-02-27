@@ -1,7 +1,5 @@
 # Líneas Editoriales Operativas
 
-------------------------------------------------------------------------
-
 ## Tipo A --- No-técnica, educativa, orientada a producto
 
 ### Reglas operativas
@@ -20,7 +18,6 @@
 -   Sin enumeraciones pedagógicas innecesarias.
 -   No anticipación de objeciones irrelevantes.
 
-------------------------------------------------------------------------
 
 ## Tipo B --- Técnica aplicada
 
@@ -43,8 +40,6 @@
 -   No hay sobrecarga de teoría sin aplicación.
 
 
-------------------------------------------------------------------------
-
 ## Tipo C --- Reflexiva / pensamiento crítico
 
 ### Reglas operativas
@@ -64,8 +59,6 @@
 -   No se convierte en ensayo abstracto sin anclaje práctico.
 -   El cierre deja espacio de reflexión, no instrucción.
 
-
-------------------------------------------------------------------------
 
 ## Tipo D --- Laboratorio / experimento
 

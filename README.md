@@ -2,7 +2,6 @@
 
 A modular editorial system designed to classify, audit, and evolve long-form content using architectural principles rather than stylistic optimization.
 
----
 
 ## Origin
 
@@ -22,7 +21,6 @@ This lab is the answer to that question.
 
 It formalizes editorial intent, separates classification from evaluation, and introduces structural auditing without rewriting the author’s voice.
 
----
 
 ## Core idea
 
@@ -36,7 +34,12 @@ The goal is not better writing.
 
 The goal is structural integrity.
 
----
+## Governance Model
+
+The system operates with a human-in-the-loop governance model.
+
+Automated modules classify and audit structure, but final editorial decisions remain explicitly human.
+
 
 ## What this is NOT
 
@@ -55,7 +58,6 @@ It evaluates structural coherence against declared intent.
 
 Nothing more.
 
----
 
 ## Implementation (Current)
 
@@ -83,7 +85,6 @@ Each type includes:
 
 
 
----
 
 ## Workflow
 
@@ -94,18 +95,12 @@ A[Text draft] --> B[Router]
 B -->|Assign type A/B/C/D| C[Select editorial line]
 C --> D[Auditor]
 D -->|Aligned| E[Publish]
-D -->|Deviations detected| F[Ask the human]
+D -->|Deviations detected| F[Editorial decision]
 F --> |Approves changes| G[Adjust text]
 G --> D
 F --> |Doesn't approve changes| Stop
 ```
----
 
-## Current version
-
-v2.0 Router + Auditor active
-
----
 
 ## Future Directions
 
@@ -114,10 +109,9 @@ v2.0 Router + Auditor active
 * Versioned editorial decisions
 * Cross-domain adaptation beyond blog writing
 
----
 
 ## Status
 
-* Experimental.
-* Used in real editorial production.
-* Continuously iterated.
+* Experimental
+* Used in real editorial production
+* Continuously iterated
