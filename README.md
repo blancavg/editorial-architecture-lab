@@ -86,16 +86,18 @@ Each type includes:
 ## Workflow
 
 ```mermaid
-flowchart TD
+flowchart TB
+    A(["Start"]) --> n1["Text draft"]
+    B{"Deviations detected"} -- Yes --> C["Editorial decision"]
+    C -- Approve --> n4["Adjust text"]
+    B -- No --> D(["Stop"])
+    n1 --> n2["Router"]
+    n2 --> n3["Auditor"]
+    n3 --> B
+    C -- Doesn't approve --> D
+    n4 --> n3
 
-A[Text draft] --> B[Router]
-B -->|Assign type A/B/C/D| C[Select editorial line]
-C --> D[Auditor]
-D -->|Aligned| E[Publish]
-D -->|Deviations detected| F[Editorial decision]
-F --> |Approves changes| G[Adjust text]
-G --> D
-F --> |Doesn't approve changes| Stop
+    C@{ shape: diam}
 ```
 
 
